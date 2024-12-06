@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="./image/logo-header.svg" alt="">
+                </div>
+                <div class="header-nav">
+                    <ul class="header-menu">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About 1</a></li>
+                                <li><a class="dropdown-item" href="#">About 2</a></li>
+                                <li><a class="dropdown-item" href="#">About 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Services 1</a></li>
+                                <li><a class="dropdown-item" href="#">Services 2</a></li>
+                                <li><a class="dropdown-item" href="#">Services 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Resources 1</a></li>
+                                <li><a class="dropdown-item" href="#">Resources 2</a></li>
+                                <li><a class="dropdown-item" href="#">Resources 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Products</a>
+                        </li>
+                        <li>
+                            <a href="">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="" class="header-phone">352.415.4596</a>
+                </div>
+                <button type="button" class="btn btn-bd-primary">get in touch</button>
+            </div>
+        </div>
+    </header>
+    <section class="section-hero">
+        <div class="hero" style="background: url('./image/bg-hero.jpg')">
+            <div class="container  px-3 mx-auto">
+                <div class="row">
+                    <div class="col-6 col-xs-12">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                Contact
+                            </h1>
+                            <p>Connect with us today, and we’ll get started with a complimentary project estimate. We stay in constant communication with our customers from your first inquiry through the final cleanup, and we’re happy to answer any questions you may have.</p>
+                            <ul class="hero-contact contact-list">
+                                <li class="item phone">
+                                    000.000.0000
+                                </li>
+                                <li class="item map">
+                                    1317 Edgewater Drive #6217, Orlando, FL 32804
+                                </li>
+                                <li class="item time">
+                                    M - F: 8 AM - 5 PM, Sat - Sun: Closed
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xs-12">
+                        <div class="hero-form animate active">
+                            <form action="">
+                                <h4 class="mb-4">let’s get started</h4>
+                                <div class="mb-4">
+                                    <input class="form-control" type="text" placeholder="Full Name"/>
+                                </div>
+                                <div class="mb-4">
+                                    <input class="form-control" type="text" placeholder="Email Address"/>
+                                </div>
+                                <div class="mb-4">
+                                    <input class="form-control" type="number" placeholder="Phone Number"/>
+                                </div>
+                                <div class="mb-4">
+                                    <input class="form-control" type="text" placeholder="Address"/>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select" >
+                                        <option selected>Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-bd-primary">get in touch</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-delivery">
+       <div class="container">
+           <div class="delivery-wrapper">
+               <div class="delivery-map">
+                   <div id="map"></div>
+               </div>
+               <div class="delivery-content">
+                   <h2 class="animate">Delivering Specialty Roofing Across Florida.</h2>
+                   <ul class="delivery-list">
+                       <li><a href="">Sarasota</a></li>
+                       <li><a href="">tampa</a></li>
+                       <li><a href="">melbourne</a></li>
+                       <li><a href="">ft. meyers</a></li>
+                       <li><a href="">Vero</a></li>
+                       <li><a href="">st. petersburg</a></li>
+                       <li><a href="">orlando</a></li>
+                       <li><a href="">jacksonville</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="section-lineAction">
+        <div class="container">
+            <h2>Visualize Your Roof With Brava Tiles</h2>
+            <button type="button" class="btn btn-bg-white">Check it out</button>
+        </div>
+    </section>
+    <section class="section-join">
+        <div class="container">
+            <div class="join-box animate">
+                <h2 class="mb-4">Looking for a Fulfilling Career? Join Our Team!</h2>
+                <p class="mb-4">FL Specialty Roofing is proud to have a completely in-house team of skilled contractors, project managers, and administrators. If you’re looking to use your skills to better the lives of Florida home and business owners, we’d love to hear from you. Check out our open positions and apply today!</p>
+                <button type="button" class="btn btn-bd-primary">get in touch</button>
+            </div>
+            <div class="join-image">
+                <img src="./image/join.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section-steps">
+        <div class="steps-title"><h3>Feel Valued at Every Step.</h3></div>
+        <div class="slider">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <div class="image">
+                        <img src="./image/slide.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h4 class="mb-3">Discovery Phase</h4>
+                        <p>When you reach out, our friendly team will talk to you on the phone to learn all about your specific roofing needs and vision. We’ll gather information about the issues you’re experiencing and what you have in mind for your final result.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="./image/slide.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h4 class="mb-3">Discovery Phase</h4>
+                        <p>When you reach out, our friendly team will talk to you on the phone to learn all about your specific roofing needs and vision. We’ll gather information about the issues you’re experiencing and what you have in mind for your final result.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="./image/slide.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h4 class="mb-3">Discovery Phase</h4>
+                        <p>When you reach out, our friendly team will talk to you on the phone to learn all about your specific roofing needs and vision. We’ll gather information about the issues you’re experiencing and what you have in mind for your final result.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="./image/slide.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h4 class="mb-3">Discovery Phase</h4>
+                        <p>When you reach out, our friendly team will talk to you on the phone to learn all about your specific roofing needs and vision. We’ll gather information about the issues you’re experiencing and what you have in mind for your final result.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="./image/slide.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h4 class="mb-3">Discovery Phase</h4>
+                        <p>When you reach out, our friendly team will talk to you on the phone to learn all about your specific roofing needs and vision. We’ll gather information about the issues you’re experiencing and what you have in mind for your final result.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="nav-btn prev"></button>
+                <div class="fraction"></div>
+                <button class="nav-btn  next"></button>
+            </div>
+        </div>
+    </section>
+    <section class="section-banner">
+        <div class="container">
+            <div class="banner-wrapper">
+                <h2 class="big">Dedicated to the Art of Roofing</h2>
+                <button type="button" class="btn btn-bd-primary">let’s connect</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="footer-logo">
+                        <img src="./image/logo-footer.png" alt="">
+                    </div>
+                    <div class="footer-social">
+                        <a href="" class="social-item">
+                            <img src="./image/google.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./image/facebook.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./image/linkedin.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./image/instagram.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        Copyright © 2022 Florida Specialty Roofing - All Rights Reserved.
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="footer-menu__name">About</div>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="">Careers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <div class="footer-menu__name">Services</div>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="">Residential</a>
+                                </li>
+                                <li>
+                                    <a href="">Commercial</a>
+                                </li>
+                                <li>
+                                    <a href="">HOAs</a>
+                                </li>
+                                <li>
+                                    <a href="">New Construction</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <div class="footer-menu__name">Resources</div>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <div class="footer-menu__name">Gallery</div>
+                        </div>
+                        <div class="col-2">
+                            <div class="footer-menu__name">Contact</div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul class="footer-contact contact-list">
+                            <li class="item phone">
+                                000.000.0000
+                            </li>
+                            <li class="item map">
+                                1317 Edgewater Drive #6217, Orlando, FL 32804
+                            </li>
+                            <li class="item time">
+                                M - F: 8 AM - 5 PM, Sat - Sun: Closed
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+            key: "AIzaSyBm06aLWaE4P-3ffAJUj6hzBLdGgHitCTU",
+            v: "weekly",
+            // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+            // Add other bootstrap parameters as needed, using camel case.
+        });
+    </script>
+</body>
+<!--Накинул пару базовых анимаций, так как не представляю что в таком шаблоне можно сделать интереснее. Просто анимация же зависит от контекста страницы, та и от какого не какого тз дизайнера, а тут контекста шаблона с envato причем WP. Плюс вопросы по адаптивности, тоже надо не надо не понятно, ладно я понимаю вы на скорую руку накидали но блин можно было же и получше что найти =) хз если хотите можете посмотреть проекты вот тут https://cloudsgn.ru/potfolio все те что не тильда версту делал я, фреемворк React, диз тоже на мне, так что думайте -->
+</html>
+
+
